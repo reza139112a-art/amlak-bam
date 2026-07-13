@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>املاک بام</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:tahoma;
+}
+
+body{
+background:#f4f4f4;
+color:#222;
+}
+
+header{
+background:#111827;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+font-size:28px;
+color:#00b894;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-size:18px;
+}
+
+.hero{
+height:400px;
+background:url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+color:white;
+text-align:center;
+}
+
+.hero h2{
+font-size:50px;
+background:rgba(0,0,0,0.5);
+padding:10px 20px;
+border-radius:10px;
+}
+
+.hero p{
+margin-top:15px;
+font-size:22px;
+background:rgba(0,0,0,0.5);
+padding:8px 15px;
+border-radius:10px;
+}
+
+.search-box{
+margin-top:20px;
+}
+
+.search-box input{
+padding:12px;
+width:250px;
+border:none;
+border-radius:8px;
+}
+
+.search-box button{
+padding:12px 20px;
+border:none;
+background:#00b894;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.section-title{
+text-align:center;
+margin:40px 0;
+font-size:35px;
+}
+
+.properties{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:15px;
+}
+
+.card-content h3{
+margin-bottom:10px;
+}
+
+.price{
+color:#00b894;
+font-size:22px;
+margin:10px 0;
+}
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+background:#111827;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-top:10px;
+}
+
+.about{
+padding:50px 20px;
+background:white;
+text-align:center;
+line-height:2;
+}
+
+.contact{
+padding:50px 20px;
+text-align:center;
+}
+
+.contact button{
+padding:15px 30px;
+background:#00b894;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+}
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero h2{
+font-size:35px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>املاک بام</h1>
+
+<nav>
+<a href="#">خانه</a>
+<a href="#">ملک‌ها</a>
+<a href="#">درباره ما</a>
+<a href="#">تماس</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<h2>خانه رویایی خود را پیدا کنید</h2>
+
+<p>خرید، فروش و اجاره ملک با بهترین قیمت</p>
+
+<div class="search-box">
+<input type="text" placeholder="جستجوی ملک...">
+<button>جستجو</button>
+</div>
+
+</section>
+
+<h2 class="section-title">جدیدترین ملک‌ها</h2>
+
+<section class="properties">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200">
+
+<div class="card-content">
+<h3>ویلای لوکس شمال</h3>
+<p>۳ خواب - استخر - پارکینگ</p>
+<div class="price">۱۲ میلیارد تومان</div>
+<a href="#" class="btn">مشاهده</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200">
+
+<div class="card-content">
+<h3>آپارتمان مدرن تهران</h3>
+<p>۲ خواب - آسانسور - فول امکانات</p>
+<div class="price">۸ میلیارد تومان</div>
+<a href="#" class="btn">مشاهده</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200">
+
+<div class="card-content">
+<h3>خانه دوبلکس</h3>
+<p>۴ خواب - حیاط بزرگ</p>
+<div class="price">۱۵ میلیارد تومان</div>
+<a href="#" class="btn">مشاهده</a>
+</div>
+</div>
+
+</section>
+
+<section class="about">
+
+<h2 class="section-title">درباره املاک بام</h2>
+
+<p>
+املاک بام با هدف ارائه بهترین فایل‌های ملکی،
+خرید و فروش آسان و تجربه‌ای مدرن در بازار املاک ایجاد شده است.
+</p>
+
+</section>
+
+<section class="contact">
+
+<h2 class="section-title">تماس با ما</h2>
+
+<p>برای مشاوره رایگان با ما در ارتباط باشید</p>
+
+<br>
+
+<button>تماس با مشاور</button>
+
+</section>
+
+<footer>
+
+تمام حقوق برای املاک بام محفوظ است
+
+</footer>
+
+</body>
+</html>
